@@ -56,7 +56,7 @@
       <header id="site_header" class="header mobile-menu-hide">
         <div class="header-content">
           <div class="site-title-block mobile-hidden">
-            <div class="site-title"><span>Sowrove </span>Hossain </div>
+             <div class="site-title"><span> Sowrove </span>Hossain </div>
           </div>
 
           <!-- Navigation -->
@@ -154,7 +154,8 @@
                         <div class="block-title">
                           <h3>About <span>Me</span></h3>
                         </div>
-                        <p>Hello! I'm Md Sowrove Hossain. I have experience in web development, IT freelancing, and manufacturing. Since 2014, I have worked with clients and companies from the United States, Germany, Japan, and Bangladesh. <i>Currently, I am working in Japan while continuing to develop my technical and professional skills. </i></b></p>
+                        <p>Hello! I'm Md Sowrove Hossain. I have experience in web development, IT freelancing, and manufacturing. Since 2014, I have worked with clients and companies from the United States, Germany, Japan, and Bangladesh. 
+                          <br/><i>Currently, I am working in Japan while continuing to develop my technical and professional skills. </i></b></p>
                       </div>
                       <div class="download-resume">
                         <a href="Md_Sowrove_Resume.pdf" target="_blank" class="btn btn-secondary">Download Resume</a>
@@ -165,12 +166,15 @@
                       <ul class="info-list">
                       <!--  <li><span class="title">Age</span><span class="value">29 (in 2022)</span></li> -->
 
-						  <li> <span class="title">Age</span> <span class="value" id="age"></span></li>
+<li>
+    <span class="title">Born</span>
+    <span class="value" id="born"></span>
+</li>
 
 <script>
     const birthDate = new Date("1993-04-25");
 
-    function calculateAge() {
+    function updateBirthInfo() {
         const today = new Date();
         let age = today.getFullYear() - birthDate.getFullYear();
 
@@ -182,16 +186,17 @@
             age--;
         }
 
-        document.getElementById("age").textContent = age + " Years";
+        document.getElementById("born").textContent =
+            birthDate.getFullYear() + " (" + age + " Years)";
     }
 
-    calculateAge();
+    updateBirthInfo();
 </script>
-                        <li><span class="title">Residence</span><span class="value">Japan</span></li>
+                        <li><span class="title">Residence</span><span class="value">Gunma, Japan</span></li>
                         <li><span class="title">Birth Place</span><span class="value">Munshiganj, Bangladesh</span></li>
-                        <li><span class="title">e-mail</span><span class="value"><a href="mailto:mhsowrove@gmail.com"><span>mhsowrove@gmail.com </span></a></span></li>
+                        <li><span class="title">E-mail</span><span class="value"><a href="mailto:mhsowrove@gmail.com"><span>mhsowrove@gmail.com </span></a></span></li>
                         <li><span class="title">Phone</span><span class="value"><a href="tel:+81 070 8951 8414">+81 070 8951 8414</a></span></li>
-                        <li><span class="title">Freelencing</span><span class="value available">Available</span></li>
+                        <li><span class="title">Status</span><span class="value available">Open to Freelance & Collaboration</span></li>
                       </ul>
                     </div>
 
@@ -328,13 +333,13 @@
                           <h3>IT <span>Skills</span></h3>
                         </div>
 
+                         <div class="skills-info">
+
 						  <h4>Precision Measurement & Quality Control & Inspection</h4>
                           <div class="skill-container">
                             <div class="skill-percentage skill-1"></div>
                           </div>
 
-						  
-                        <div class="skills-info">
                           <h4>Hardware & Software Troubleshooting</h4>                               
                           <div class="skill-container">
                             <div class="skill-percentage skill-1"></div>
